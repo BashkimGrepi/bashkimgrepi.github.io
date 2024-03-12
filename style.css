@@ -12,7 +12,7 @@ body{
     background-color:#e6ded5;
 }
 .etusivu-section{
-    background-image: url("uusiprojekti/images/Näyttökuva\ 2024-03-07\ 142834.png'");
+    background-image: url("uusiprojekti/images/näyttökuva1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -320,7 +320,7 @@ main input:hover{
 }
 
 .consultation footer div{
-    background-image: url("uusiprojekti/images/Näyttökuva\ 2024-03-07\ 202059.png");
+    background-image: url("uusiprojekti/images/näyttökuva2.png");
     height: 35vh;
     width: 140%;
     background-position: center;
