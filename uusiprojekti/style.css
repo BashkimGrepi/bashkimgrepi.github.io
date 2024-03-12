@@ -1,0 +1,439 @@
+/* mobile first css */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --primary-color: #01385c;
+}
+body{
+    background-color:#e6ded5;
+}
+.etusivu-section{
+    background-image: url("images/Näyttökuva\ 2024-03-07\ 142834.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+.etusivu-section .digi{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    padding: 0 30px;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(209, 233, 243, 0.493);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    padding-bottom: 35px ;
+}
+.sidebar a{
+    width: 100%;
+}
+
+/* media query for navigation only */
+@media(max-width: 700px){
+    .hideOnMobile{
+        display: none;
+    };
+    .menu-btn{
+        display: block;
+    }
+    
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 701px) {
+    .menu-btn{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+
+}
+
+/* media query for navigation only ends here */
+
+
+
+main{
+    
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 50px ;
+    padding: 10px 30px;
+}
+
+main h1{
+    margin: auto;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: normal;
+}
+.main-p{
+    margin: 100px 0 50px 0;
+}
+main div p{
+    font-size: larger;
+    line-height: 30px;
+    text-align: center;
+}
+.etusivu-btn{
+    text-align: center;
+    margin: 20px;
+}
+main input{
+    
+    padding: 6px 12px;
+    width: 120px;
+    background-color: var(--primary-color);
+    padding: 15px 18px ;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: light;
+    cursor: pointer;
+    transition: background-color 0.7 ease;
+    
+    
+}
+main input:hover{
+    background-color: #044c7c;
+    font-weight: bold;
+}
+
+
+/*services part starts here */
+.services header{
+    text-align: center;
+}
+.services h1{
+    font-weight: normal;
+}
+.services header{   
+    padding: 80px 15px 40px 15px;
+}
+.services h1{   
+    font-size: xx-large;
+}
+.services div{
+    border: 2px solid;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services div .top-p{
+    margin: 60px 30px 40px;
+    text-align: center;
+    font-size: larger;
+}
+.services div .price{
+    margin: 10px 20px 60px;
+    text-align: center;
+    
+}
+.services div .bottom-p{
+    margin: 25px 30px 80px;
+    text-align: center;
+    font-size: larger;
+}
+.services div input{
+    margin: 25px 30px 25px;
+    text-align: center;
+    font-size: larger;
+}
+.services div input{
+    padding: 6px 12px;
+    width: 120px;
+    background-color: var(--primary-color);
+    padding: 15px 18px 15px ;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: light;
+    cursor: pointer;
+    transition: background-color 0.7 ease;
+}
+.services div input:hover{
+    background-color: #035388;
+    font-weight: bold;
+}
+.services .popular{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 243%;
+    right: 5%;
+    border: none;
+}
+
+/*services part ends here */
+
+
+
+/*consultation part starts here */
+.consultation{
+    margin: 100px 35px 20px 35px;
+}
+.consultation .box-shadow{
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+}
+.consultation header{
+    font-size:170%;
+    margin-bottom: 50px;
+}
+.consultation header h1{
+    font-weight: normal;
+}
+.consultation .log-in-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 15px;
+}
+.consultation .log-in-flex p{
+    padding-right: 5px;
+}
+.consultation .log-in-flex a{
+    color: black;
+}
+.consultation .appointment{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    
+    
+}
+.consultation .appointment h3{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: 10px;
+}
+.consultation .consultation-time{
+    border: 1px solid;
+    padding: 40px 0 40px 35px;
+    margin: 15px 15px 25px 15px;
+}
+.time-zone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-zone p{
+    font-weight: bold;
+    margin: 10px;
+}
+.time-zone select{
+    margin-bottom: 30px;
+    padding: 5px 30px;
+}
+.time input{
+    text-align: center;
+    margin: 0 0 20px 20px;
+    
+}
+.ps {
+    color: rgb(158, 158, 158);
+    padding: 0 15px 20px 20px;
+}
+.one-two{
+    margin-top:20px;
+    
+}
+.two{
+    margin-top: 20px;
+}
+.appointment{
+    padding: 20px;
+}
+.consultation footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    
+}
+.consultation footer p, h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.consultation footer div{
+    background-image: url("images/Näyttökuva\ 2024-03-07\ 202059.png");
+    height: 35vh;
+    width: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+
+.contact{
+    margin: 40px;
+}
+
+.contact header{
+    padding: 0 30px 30px 0;
+}
+.contact article {
+    padding: 10px 5px 20px 0;
+    line-height: 25px;
+    
+}
+.contact article  p{
+   font-weight: 550 ;
+    
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 10px 0;
+
+}
+.contact form label{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+}
+.contact form span{
+    font-weight: lighter;
+    color: grey;
+
+}
+.contact form input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px ;
+    border: 1px solid;
+    margin-top: 6px;
+    background-color: #e2e1e0;
+}
+.contact form #text{
+    padding: 30px;
+    
+}
+
+.contact form .btn{
+    padding: 6px 12px;
+    width: 120px;
+    background-color: var(--primary-color);
+    padding: 15px 18px 15px ;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: light;
+    cursor: pointer;
+    transition: background-color 0.7 ease;
+}
+.contact form .btn:hover{
+    background-color: #035388;
+    
+}
+
+
+/*consultation part ends here */
+
+
+
+
+@media(min-width:700px){
+    .medium-flex-box{
+        display: flex;
+    }
+    .px800-flex{
+        margin: 0 110px 0 110px;
+    }
+    .consultation{
+        margin: 0 80px 0 80px;
+    }
+   
+    .etusivu-section main .main-p{
+    margin: 40px 80px 80px 80px;
+}
+}
+
+@media(min-width: 1250px){
+    .big-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .consultation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
+    .consultation footer{
+        padding-left: 200px;
+    }
+    .consultation footer div{
+        
+        width: 200% ;
+       
+    }
+}
+
+
